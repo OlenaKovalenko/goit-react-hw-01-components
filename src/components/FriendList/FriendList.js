@@ -1,4 +1,4 @@
-import friends from "../../data/friends.json";
+// import friends from "../../data/friends.json";
 import { FriendListItem } from "./FriendListItem";
 
 
