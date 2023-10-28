@@ -1,4 +1,4 @@
-import stats from "../../data/data.json"
+import stats from "../../data/data.json";
 
 export const Statistics = ({ title, stats: {id, label, percentage} }) => {
     return (
