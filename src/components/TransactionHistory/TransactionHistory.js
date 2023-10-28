@@ -1,5 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type"
-
 export const TransactionHistory = ({ items }) => {
     return (
         <table className="transaction-history">
