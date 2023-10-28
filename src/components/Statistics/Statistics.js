@@ -1,9 +1,9 @@
-import stats from "../../../data/data.json"
+import stats from "../../data/data.json"
 
 export const Statistics = ({ title, stats: {id, label, percentage} }) => {
     return (
         <section className="statistics">
-            <h2 class="title">Upload stats</h2>
+            <h2 className="title">{title}</h2>
 
             <ul className="stat-list">
                 {stats.map(stat => {
