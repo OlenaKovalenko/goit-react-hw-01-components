@@ -1,5 +1,5 @@
 import stats from "../../data/data.json";
-import { StatSection, StatList, StatTitle, StatItem } from "./Statistics.styled";
+import { StatSection, StatList, StatTitle, StatItem, StatLabel, StatPercentage } from "./Statistics.styled";
 
 export const Statistics = ({ title, stats: {id, label, percentage} }) => {
     return (
@@ -10,8 +10,8 @@ export const Statistics = ({ title, stats: {id, label, percentage} }) => {
                 {stats.map(stat => {
                     return (
                         <StatItem key={stat.id} className="item">
-                            <span className="label">{stat.label}</span>
-                            <span className="percentage">{stat.percentage}%</span>
+                            <StatLabel>{stat.label}</StatLabel>
+                            <StatPercentage>{stat.percentage}%</StatPercentage>
                         </StatItem>
                     )
                 })}

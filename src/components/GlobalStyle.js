@@ -52,7 +52,8 @@ export const GlobalStyle = createGlobalStyle`
         margin-left: auto;
         border-radius: ${p => p.theme.radii.lg};
         margin-bottom: ${p => p.theme.spacing(10)};
-        padding: ${p => p.theme.spacing(8)};
+        padding-top: ${p => p.theme.spacing(8)};
+        padding-bottom: ${p => p.theme.spacing(8)};
         background-color: ${p => p.theme.colors.grey};
 
     }
