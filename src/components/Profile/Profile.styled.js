@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
-    width: 300px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding-top: ${p => p.theme.spacing(5)};
@@ -61,7 +61,7 @@ export const ProfileItem = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(300px / 3);
+    width: calc(400px / 3);
     gap: ${p => p.theme.spacing(2)};
     border: 1px solid ${p => p.theme.colors.black};
     padding: ${p => p.theme.spacing(3)};
