@@ -1,10 +1,11 @@
 // import friends from "../../data/friends.json";
+import { FriendContainer} from "./FriendList.styled";
 import { FriendListItem } from "./FriendListItem";
 
 
 export const FriendList = ({ friends }) => {
     return (
-        <ul className="friend-list">
+        <FriendContainer>
             {friends.map(friend => {
                 return (
                     <FriendListItem
@@ -14,6 +15,6 @@ export const FriendList = ({ friends }) => {
                         status={friend.isOnline} />
                 )
             })}
-        </ul>
+        </FriendContainer>
     )
 }

@@ -2,8 +2,9 @@ export const theme = {
     colors: {
         white: '#fafafa',
         black: '#212121',
-        grey: "#808080",
-        
+        grey: '#808080',
+        red: 'red',
+        green: 'green',
         accent: 'purple',
     },
     radii: {
