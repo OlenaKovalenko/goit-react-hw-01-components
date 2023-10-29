@@ -39,4 +39,21 @@ export const GlobalStyle = createGlobalStyle`
         height: auto;
         object-fit: cover;
     }
+
+    main {
+        margin-top: ${p => p.theme.spacing(10)};
+        margin-bottom: ${p => p.theme.spacing(10)};
+        text-align: center;
+    }
+
+    section {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: ${p => p.theme.radii.lg};
+        margin-bottom: ${p => p.theme.spacing(10)};
+        padding: ${p => p.theme.spacing(8)};
+        background-color: ${p => p.theme.colors.grey};
+
+    }
 `;

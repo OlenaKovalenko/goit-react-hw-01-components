@@ -3,6 +3,7 @@ export const theme = {
         white: '#fafafa',
         black: '#212121',
         grey: "#808080",
+        
         accent: 'purple',
     },
     radii: {
@@ -11,4 +12,4 @@ export const theme = {
         lg: '16px',
     },
     spacing: value => `${value * 4}px`,
-}
+};

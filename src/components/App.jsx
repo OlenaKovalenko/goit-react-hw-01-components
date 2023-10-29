@@ -13,24 +13,30 @@ import { GlobalStyle } from "./GlobalStyle";
 
 export const App = () => {
   return (
-    <>
-      <Profile
+    <main>
+      <section>
+        <Profile
         key={user.tag}
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats} />
-      <br />
+      </section>
 
-      <Statistics title="Upload stats" stats={data} />
-      <br />
+      <section>
+        <Statistics title="Upload stats" stats={data} />
+      </section>
 
-      <FriendList friends={friends} />
-      <br />
-      <TransactionHistory items={transactions} />
+      <section>
+        <FriendList friends={friends} />
+      </section>
 
+      <section>
+        <TransactionHistory items={transactions} />
+      </section>
+    
       <GlobalStyle/>
-    </>
+    </main>
   );
 };

@@ -7,7 +7,7 @@ export const ProfileContainer = styled.div`
     padding-top: ${p => p.theme.spacing(5)};
     padding-bottom: ${p => p.theme.spacing(5)};
     background-color: ${p => p.theme.colors.white};
-    border-radius: ${p => p.theme.radii.lg};
+    border-radius: ${p => p.theme.radii.md};
     box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px,
     rgb(0 0 0 / 12%) 0px 1px 8px 0px;
 
@@ -34,14 +34,12 @@ export const ProfileImg = styled.img`
 export const ProfileName = styled.p`
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
     margin-bottom: ${p => p.theme.spacing(2)};
 `;
 
 export const ProfileTag = styled.p`
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
     color: ${p => p.theme.colors.grey};
     margin-bottom: ${p => p.theme.spacing(2)};
 `;
@@ -49,9 +47,7 @@ export const ProfileTag = styled.p`
 export const ProfileLocation = styled.p`
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
     color: ${p => p.theme.colors.grey};
-    /* margin-bottom: ${p => p.theme.spacing(2)}; */
 `;
 
 export const ProfileListStats = styled.ul`
