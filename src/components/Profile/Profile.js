@@ -1,29 +1,29 @@
-import { ProfileContainer } from "./Profile.styled";
+import { ProfileContainer, ProfileDescription, ProfileImg, ProfileName, ProfileTag, ProfileLocation, ProfileListStats, ProfileItem, ProfileLabel, ProfileQuantity} from "./Profile.styled";
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
         <ProfileContainer>
-            <div className="description">
-                <img src={avatar} alt={username} width="200"  className="avatar" />
-                <p className="name">{username}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{location}</p>
-            </div>
+            <ProfileDescription>
+                <ProfileImg src={avatar} alt={username} width="100"  />
+                <ProfileName>{username}</ProfileName>
+                <ProfileTag>@{tag}</ProfileTag>
+                <ProfileLocation>{location}</ProfileLocation>
+            </ProfileDescription>
 
-            <ul className="stats">
-                <li>
-                    <span className="label">Followers</span>
-                    <span className="quantity">{stats.followers}</span>
-                </li>
-                <li>
-                    <span className="label">Views</span>
-                    <span className="quantity">{stats.views}</span>
-                </li>
-                <li>
-                    <span className="label">Likes</span>
-                    <span className="quantity">{stats.likes}</span>
-                </li>
-            </ul>
+            <ProfileListStats>
+                <ProfileItem>
+                    <ProfileLabel>Followers</ProfileLabel>
+                    <ProfileQuantity>{stats.followers}</ProfileQuantity>
+                </ProfileItem>
+                <ProfileItem>
+                    <ProfileLabel>Views</ProfileLabel>
+                    <ProfileQuantity>{stats.views}</ProfileQuantity>
+                </ProfileItem>
+                <ProfileItem>
+                    <ProfileLabel>Likes</ProfileLabel>
+                    <ProfileQuantity>{stats.likes}</ProfileQuantity>
+                </ProfileItem>
+            </ProfileListStats>
         </ProfileContainer>
     );
 }
