@@ -1,6 +1,8 @@
+import { ProfileContainer } from "./Profile.styled";
+
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-        <div className="profile">
+        <ProfileContainer>
             <div className="description">
                 <img src={avatar} alt={username} width="200"  className="avatar" />
                 <p className="name">{username}</p>
@@ -22,19 +24,8 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
                     <span className="quantity">{stats.likes}</span>
                 </li>
             </ul>
-        </div>
+        </ProfileContainer>
     );
 }
 
-// Profile.propTypes = {
-//     username: PropTypes.string.isRequired,
-//     tag: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     stats: PropTypes.shape({
-//         followers: PropTypes.number.isRequired,
-//         views: PropTypes.number.isRequired,
-//         likes: PropTypes.number.isRequired,
-//     }),
-
-// }
 
