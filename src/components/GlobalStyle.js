@@ -54,7 +54,6 @@ export const GlobalStyle = createGlobalStyle`
         margin-bottom: ${p => p.theme.spacing(10)};
         padding-top: ${p => p.theme.spacing(8)};
         padding-bottom: ${p => p.theme.spacing(8)};
-        background-color: ${p => p.theme.colors.grey};
-
+        background-color: ${p => p.theme.colors.lightGrey};
     }
 `;
