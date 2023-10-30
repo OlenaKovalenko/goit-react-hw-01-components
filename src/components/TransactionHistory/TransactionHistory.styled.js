@@ -17,6 +17,7 @@ export const TableHead = styled.thead`
     color: ${p => p.theme.colors.white};
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.5;
     text-transform: uppercase;
 `;
 
