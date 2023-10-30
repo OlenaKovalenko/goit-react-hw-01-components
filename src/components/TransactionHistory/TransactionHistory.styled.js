@@ -25,6 +25,7 @@ export const TableRow = styled.tr`
     color: ${p => p.theme.colors.black};
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     &:nth-child(even) {
         background-color: ${p => p.theme.colors.lightGrey};
     };
