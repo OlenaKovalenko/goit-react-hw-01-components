@@ -7,6 +7,7 @@ export const theme = {
         red: 'red',
         green: 'green',
         accent: 'purple',
+        blue: '#87CEEB',
     },
     radii: {
         sm: '4px',

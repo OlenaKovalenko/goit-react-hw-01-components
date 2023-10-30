@@ -54,6 +54,7 @@ export const ProfileListStats = styled.ul`
     display: flex;
     background-color: #0900114a;
     justify-content: center;
+
 `;
 
 export const ProfileItem = styled.li`
