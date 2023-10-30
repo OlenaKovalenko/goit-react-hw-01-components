@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StatSection = styled.section`
     width: 400px;
+    margin-bottom: 0;
     padding-top: ${p => p.theme.spacing(4)};
     padding-bottom: ${p => p.theme.spacing(4)};
     background-color: ${p => p.theme.colors.white};
@@ -36,7 +37,7 @@ export const StatItem = styled.li`
     flex-direction: column;
     gap: ${p => p.theme.spacing(2)};
     padding: ${p => p.theme.spacing(3)};
-    background-color:${getRandomHexColor};
+    background-color: ${getRandomHexColor};
     color: ${p => p.theme.colors.white};
 `;
 
